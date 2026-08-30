@@ -41,6 +41,33 @@ target="_blank">
 <header>
 <div class="logo">HABRIVO AI</div>
 <p class="tag">AI Employees for Modern Businesses</p>
+<p id="typing" style="font-size:20px;color:#3db8ff;font-weight:bold;"></p>
+
+<script>
+const text="Hi! I'm Habrivo AI. I automate WhatsApp, Bookings & Customer Support.";
+let i=0;
+function type(){
+  if(i<text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type,40);
+  }
+}
+window.onload=type;
+</script>
+
+
+const text="Hi! I'm Habrivo AI. I automate WhatsApp, Bookings & Customer Support.";
+let i=0;
+function type(){
+  if(i<text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type,40);
+  }
+}
+window.onload=type;
+</script>
 <p style="margin-top:18px;font-size:18px;">
 Automate WhatsApp, Customer Support, Bookings & Lead Management.
 </p>
