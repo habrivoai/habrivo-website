@@ -1,53 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Habrivo AI</title>
 <style>
-body{margin:0;font-family:Arial;background:#08111f;color:white;text-align:center}
-.hero{padding:80px 20px}
-h1{font-size:52px;color:#3fb8ff;margin:0}
-h2{font-size:22px;font-weight:normal}
-.btn{display:inline-block;background:#1e88ff;color:white;padding:15px 30px;border-radius:10px;text-decoration:none;font-weight:bold}
-.box{background:#111827;margin:20px auto;padding:20px;border-radius:15px;max-width:320px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#050816;color:white}
+header{padding:80px 20px;text-align:center;background:linear-gradient(135deg,#07142d,#0d2f6d)}
+.logo{font-size:52px;font-weight:bold;color:#3db8ff}
+.tag{margin-top:10px;color:#cfd8e3}
+.btn{display:inline-block;margin-top:25px;padding:14px 30px;background:#1f8cff;color:white;border-radius:10px;text-decoration:none;font-weight:bold}
+section{padding:60px 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1100px;margin:auto}
+.card{background:#111827;padding:25px;border-radius:18px;border:1px solid #23324d}
+.card h3{color:#3db8ff;margin-bottom:10px}
+.price{font-size:36px;color:#3db8ff;font-weight:bold}
+footer{padding:40px;text-align:center;background:#08111f;border-top:1px solid #23324d}
 </style>
 </head>
 <body>
-<div class="hero">
-<h1>Habrivo AI</h1>
-<h2>AI Employees for Modern Businesses</h2>
-<p>Automate WhatsApp, customer support, bookings and lead management.</p>
-<a class="btn" href="mailto:habrivoai@gmail.com?subject=Free Demo">Book Free Demo</a>
+
+<header>
+<div class="logo">HABRIVO AI</div>
+<p class="tag">AI Employees for Modern Businesses</p>
+<p style="margin-top:18px;font-size:18px;">
+Automate WhatsApp, Customer Support, Bookings & Lead Management.
+</p>
+<a class="btn" href="mailto:habrivoai@gmail.com?subject=Free Demo Request">Book Free Demo</a>
+</header>
+
+<section>
+<h2 style="text-align:center;margin-bottom:35px;">Our AI Services</h2>
+<div class="cards">
+<div class="card">
+<h3>AI Receptionist</h3>
+<p>Automatic WhatsApp replies 24/7.</p>
 </div>
 
-<h2>Launch Pricing</h2>
+<div class="card">
+<h3>Lead Follow-up</h3>
+<p>No customer enquiry gets missed.</p>
+</div>
 
-<div class="box">
+<div class="card">
+<h3>Appointment Booking</h3>
+<p>Customers can book automatically.</p>
+</div>
+
+<div class="card">
+<h3>Multilingual AI</h3>
+<p>English • Hindi • Bangla.</p>
+</div>
+</div>
+</section>
+
+<section style="background:#08111f;">
+<h2 style="text-align:center;margin-bottom:35px;">Launch Pricing</h2>
+
+<div class="cards">
+
+<div class="card">
 <h3>Free Demo</h3>
-<h1>₹0</h1>
+<div class="price">₹0</div>
 <p>7 Days Trial</p>
 </div>
 
-<div class="box">
+<div class="card">
 <h3>Starter</h3>
-<h1>₹299</h1>
+<div class="price">₹299</div>
 <p>Perfect for Local Shops</p>
 </div>
 
-<div class="box">
+<div class="card">
 <h3>Growth</h3>
-<h1>₹599</h1>
-<p>Clinics • Salons • Restaurants</p>
+<div class="price">₹599</div>
+<p>Best for Clinics & Salons</p>
 </div>
 
-<div class="box">
+<div class="card">
 <h3>Business</h3>
-<h1>₹999</h1>
-<p>Advanced Automation</p>
+<div class="price">₹999</div>
+<p>Advanced AI Automation</p>
 </div>
 
+</div>
+</section>
+
+<section>
+<h2 style="text-align:center;margin-bottom:30px;">Why Habrivo?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Fast Setup</h3>
+<p>Start within minutes.</p>
+</div>
+
+<div class="card">
+<h3>24/7 Support</h3>
+<p>Your AI never sleeps.</p>
+</div>
+
+<div class="card">
+<h3>Secure</h3>
+<p>Built for modern businesses.</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<h2>HABRIVO AI</h2>
+<p style="margin:12px 0;">AI Employees for Modern Businesses</p>
 <p>📧 habrivoai@gmail.com</p>
+<p style="margin-top:15px;">© 2026 Habrivo AI</p>
+</footer>
 
 </body>
 </html>
