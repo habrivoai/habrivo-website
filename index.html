@@ -98,6 +98,15 @@ target="_blank">
     </button>
   </div>
 </section>
+section style="padding:50px 20px;text-align:center;">
+  <h2>Why Choose Habrivo AI?</h2>
+
+  <div style="display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-top:25px;">
+    <div><h1 id="c1">0</h1><p>Leads</p></div>
+    <div><h1 id="c2">0</h1><p>Replies</p></div>
+    <div><h1 id="c3">0</h1><p>Hours Saved</p></div>
+  </div>
+</section>
 <script>
 const text="Hi! I'm Habrivo AI. I automate WhatsApp, Bookings & Customer Support.";
 let i=0;
@@ -109,23 +118,22 @@ function type(){
   }
 }
 window.onload=type;
-</script>
+let n=0;
+const timer=setInterval(()=>{
+  if(n<=100){
+    document.getElementById("c1").innerText=n+"+";
+    document.getElementById("c2").innerText=(n*5)+"+";
+    document.getElementById("c3").innerText=(n*2)+"+";
+    n++;
+  }else{
+    clearInterval(timer);
+  }
+},20);
 function demoReply(){
-  document.getElementById("chatReply").innerHTML =
+</script>
+document.getElementById("chatReply").innerHTML =
     "<b>Habrivo AI:</b> Our AI replies instantly on WhatsApp, books customers and answers automatically.";
 }
-
-const text="Hi! I'm Habrivo AI. I automate WhatsApp, Bookings & Customer Support.";
-let i=0;
-function type(){
-  if(i<text.length){
-    document.getElementById("typing").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(type,40);
-  }
-}
-window.onload=type;
-</script>
 <p style="margin-top:18px;font-size:18px;">
 Automate WhatsApp, Customer Support, Bookings & Lead Management.
 </p>
