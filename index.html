@@ -44,7 +44,6 @@ z-index:999;
   position:relative;
   overflow:hidden;
 }
-
 .ai-orb{
   width:180px;
   height:180px;
@@ -54,7 +53,6 @@ z-index:999;
   box-shadow:0 0 30px #3db8ff,0 0 80px rgba(61,184,255,.4);
   animation:floatOrb 4s ease-in-out infinite;
 }
-
 .hero::before{
   content:"";
   position:absolute;
@@ -62,12 +60,10 @@ z-index:999;
   background:radial-gradient(circle at center,rgba(61,184,255,.12),transparent 70%);
   pointer-events:none;
 }
-
 @keyframes floatOrb{
   0%,100%{transform:translateY(0) scale(1);}
   50%{transform:translateY(-12px) scale(1.05);}
 }
-
 .card{
   backdrop-filter:blur(12px);
   background:rgba(17,24,39,.85);
@@ -90,6 +86,18 @@ target="_blank">
 <h2>Trusted by Local Businesses</h2>
 <p>Fast Setup • No Coding • WhatsApp Automation • 24/7 Support</p>
 </section>
+<section style="padding:40px 20px;max-width:500px;margin:auto;">
+  <h2 style="text-align:center;">Live AI Demo</h2>
+
+  <div style="background:#111827;border-radius:18px;padding:20px;border:1px solid #23324d;">
+    <p><b>Customer:</b> Price?</p>
+    <p id="chatReply" style="color:#3db8ff;"><b>Habrivo AI:</b> Typing...</p>
+
+    <button onclick="demoReply()" style="margin-top:15px;padding:12px 18px;background:#25D366;border:none;border-radius:10px;color:white;font-weight:bold;cursor:pointer;">
+      Send Demo
+    </button>
+  </div>
+</section>
 <script>
 const text="Hi! I'm Habrivo AI. I automate WhatsApp, Bookings & Customer Support.";
 let i=0;
@@ -102,7 +110,10 @@ function type(){
 }
 window.onload=type;
 </script>
-
+function demoReply(){
+  document.getElementById("chatReply").innerHTML =
+    "<b>Habrivo AI:</b> Our AI replies instantly on WhatsApp, books customers and answers automatically.";
+}
 
 const text="Hi! I'm Habrivo AI. I automate WhatsApp, Bookings & Customer Support.";
 let i=0;
