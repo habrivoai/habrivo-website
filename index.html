@@ -153,8 +153,11 @@ const timer=setInterval(()=>{
 },20);
 <script>
 function demoReply() {
-document.getElementById("chatReply").innerHTML =
-"<b>Habrivo AI:</b> ₹4,999. Our AI replies instantly on WhatsApp, books customers automatically and supports 24/7. ✅";
+  const chat = document.getElementById("chatReply");
+
+  chat.innerHTML =
+    "<b>Habrivo AI:</b> ₹4,999/month. Our AI replies instantly on WhatsApp, books customers automatically and supports 24/7. ✅";
+}
 </script>
 <p style="margin-top:18px;font-size:18px;">
 Automate WhatsApp, Customer Support, Bookings & Lead Management.
