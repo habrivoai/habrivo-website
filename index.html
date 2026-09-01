@@ -94,8 +94,8 @@ box-shadow:0 0 30px rgba(61,184,255,.3);
 </style>
 </head>
 <body>
-<button class="whatsapp-float" onclick="demoReply()">
-  💬 WhatsApp
+<button class="whatsapp-float" onclick="openAIChat()">
+🤖 Habrivo AI
 </button>
 <div class="ai-orb"></div>
 <header>
@@ -244,6 +244,14 @@ Automate WhatsApp, Customer Support, Bookings & Lead Management.
 <p>📧 habrivoai@gmail.com</p>
 <p style="margin-top:15px;">© 2026 Habrivo AI</p>
 </footer>
-<a class="ai-chat" href="https://wa.me/919395946867?text=Hi%20Habrivo%20AI" target="_blank">🤖</a>
+<button class="whatsapp-float" onclick="openAIChat()">
+🤖 Habrivo AI
+</button>
+<script>
+function openAIChat() {
+  document.getElementById("chatReply").innerHTML =
+    "<b>Habrivo AI:</b> 👋 Hi! Main Habrivo AI hoon. Price, demo aur booking mein help kar sakta hoon.";
+}
+</script>
 </body>
 </html>
