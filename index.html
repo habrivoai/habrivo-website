@@ -94,8 +94,7 @@ box-shadow:0 0 30px rgba(61,184,255,.3);
 </style>
 </head>
 <body>
-<button class="whatsapp-float" onclick="openAIChat()">
-🤖 Habrivo AI
+<button 
 </button>
 <div class="ai-orb"></div>
 <header>
@@ -108,24 +107,23 @@ box-shadow:0 0 30px rgba(61,184,255,.3);
 <p>Fast Setup • No Coding • WhatsApp Automation • 24/7 Support</p>
 </section>
 <section style="padding:40px 20px;max-width:500px;margin:auto;">
-  <h2 style="text-align:center;">Live AI Demo</h2>
-
-  <div style="background:#111827;border-radius:18px;padding:20px;border:1px solid #23324d;">
-    <p><b>Customer:</b> Price?</p>
-    <p id="chatReply" style="color:#3db8ff;"><b>Habrivo AI:</b> Typing...</p>
-
-    <button onclick="demoReply()" style="margin-top:15px;padding:12px 18px;background:#25D366;border:none;border-radius:10px;color:white;font-weight:bold;cursor:pointer;">
-      Send Demo
-    </button>
-  </div>
+ <h2 style="text-align:center;">Live AI Demo</h2>
+<div style="background:#111827;border-radius:18px;padding:20px;border:1px solid #23324d;">
+<p><b>Customer:</b> Price?</p>
+<p id="chatReply" style="color:#3db8ff;"><b>Habrivo AI:</b> Typing...</p>
+<button 
+onclick="demoReply()" style="margin-top:15px;padding:12px 18px;background:#25D366;border:none;border-radius:10px;color:white;font-weight:bold;cursor:pointer;">
+Send Demo
+</button>
+</div>
 </section>
 <section style="padding:50px 20px;text-align:center;">
-  <h2>Why Choose Habrivo AI?</h2>
-  <div style="display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-top:25px;">
-    <div><h1 id="c1">0</h1><p>Leads</p></div>
-    <div><h1 id="c2">0</h1><p>Replies</p></div>
-    <div><h1 id="c3">0</h1><p>Hours Saved</p></div>
-  </div>
+<h2>Why Choose Habrivo AI?</h2>
+<div style="display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-top:25px;">
+<div><h1 id="c1">0</h1><p>Leads</p></div>
+<div><h1 id="c2">0</h1><p>Replies</p></div>
+<div><h1 id="c3">0</h1><p>Hours Saved</p></div>
+</div>
 </section>
 <script>
 const text="Hi! I'm Habrivo AI. I automate WhatsApp, Bookings & Customer Support.";
@@ -242,13 +240,12 @@ Automate WhatsApp, Customer Support, Bookings & Lead Management.
 <p>📧 habrivoai@gmail.com</p>
 <p style="margin-top:15px;">© 2026 Habrivo AI</p>
 </footer>
-<button 
+<button class="whatsapp-float" onclick="openSignup()">
+  🤖 Connect WhatsApp
 </button>
-
 <script>
-function openAIChat() {
-  document.getElementById("chatReply").innerHTML =
-    "<b>Habrivo AI:</b> 👋 Hi! Main Habrivo AI hoon. Price, demo aur booking mein help kar sakta hoon.";
+function openSignup() {
+  alert("Connect your WhatsApp Business account to start your AI employee.");
 }
 </script>
 </body>
