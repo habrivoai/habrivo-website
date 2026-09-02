@@ -107,14 +107,24 @@ box-shadow:0 0 30px rgba(61,184,255,.3);
 <p>Fast Setup • No Coding • WhatsApp Automation • 24/7 Support</p>
 </section>
 <section style="padding:40px 20px;max-width:500px;margin:auto;">
- <h2 style="text-align:center;">Live AI Demo</h2>
-<div style="background:#111827;border-radius:18px;padding:20px;border:1px solid #23324d;">
-<p><b>Customer:</b> Price?</p>
-<p id="chatReply" style="color:#3db8ff;"><b>Habrivo AI:</b> Typing...</p>
-<button 
-onclick="demoReply()" style="margin-top:15px;padding:12px 18px;background:#25D366;border:none;border-radius:10px;color:white;font-weight:bold;cursor:pointer;">
-Send Demo
-</button>
+<h2 style="text-align:center;">Connect Your WhatsApp Business</h2>
+
+<div style="max-width:500px;margin:auto;background:#111827;padding:25px;border-radius:18px;">
+  <input id="name" placeholder="Business Name"
+    style="width:100%;padding:12px;margin:8px 0;border-radius:10px;border:none;">
+
+  <input id="phone" placeholder="WhatsApp Business Number"
+    style="width:100%;padding:12px;margin:8px 0;border-radius:10px;border:none;">
+
+  <input id="category" placeholder="Business Category"
+    style="width:100%;padding:12px;margin:8px 0;border-radius:10px;border:none;">
+
+  <button onclick="connectBusiness()"
+    style="width:100%;padding:14px;background:#25D366;color:white;border:none;border-radius:12px;font-weight:bold;">
+    Connect WhatsApp
+  </button>
+
+  <p id="status" style="margin-top:12px;color:#3db8ff;"></p>
 </div>
 </section>
 <section style="padding:50px 20px;text-align:center;">
@@ -244,8 +254,18 @@ Automate WhatsApp, Customer Support, Bookings & Lead Management.
   🤖 Connect WhatsApp
 </button>
 <script>
-function openSignup() {
-  alert("Connect your WhatsApp Business account to start your AI employee.");
+function connectBusiness() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const category = document.getElementById("category").value;
+
+  if (!name || !phone || !category) {
+    document.getElementById("status").innerText = "Please fill all fields.";
+    return;
+  }
+
+  document.getElementById("status").innerText =
+    "✅ " + name + " registered. WhatsApp connection will start in the next step.";
 }
 </script>
 </body>
