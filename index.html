@@ -255,23 +255,9 @@ style="width:100%;padding:14px;background:#25D366;color:white;border:none;border
 <script>
 function connectMeta() {
   window.open(
-    "https://developers.facebook.com/docs/whatsapp/",
+    "https://docs.google.com/forms/d/e/1FAIpQLSd6lJ0L07CVBgQb_1q9jgOprL4SfRhlDm0ZtOY-I9tlJpz_5w/viewform?usp=publish-editor",
     "_blank"
   );
-}
-
-function connectBusiness() {
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const category = document.getElementById("category").value;
-
-  if (!name || !phone || !category) {
-    document.getElementById("status").innerText = "Please fill all fields.";
-    return;
-  }
-
-  document.getElementById("status").innerText =
-    "✅ " + name + " registered. WhatsApp connection will start in the next step.";
 }
 </script>
 </body>
