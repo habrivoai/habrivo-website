@@ -249,16 +249,26 @@ Automate WhatsApp, Customer Support, Bookings & Lead Management.
 <p style="margin-top:15px;">© 2026 Habrivo AI</p>
 </footer>
 <button>
-  onclick="connectMeta()"
+  onclick="connectBusiness()"
 style="width:100%;padding:14px;background:#25D366;color:white;border:none;border-radius:12px;font-size:18px;cursor:pointer;">
   Connect WhatsApp
 </button>
 <script>
-function connectMeta() {
-  window.open(
-    "https://forms.gle/LXa4QfLk1Y8izDra8",
-    "_blank"
-  );
+function connectBusiness() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const category = document.getElementById("category").value;
+  const status = document.getElementById("status");
+
+  if (!name || !phone || !category) {
+    status.innerText = "Sab field bharo.";
+    return;
+  }
+
+  // Yahan tumhara Step 2 khulega
+  window.open("https://business.facebook.com/wa/manage", "_blank");
+
+  status.innerText = "Meta WhatsApp Manager khul raha hai...";
 }
 </script>
 </body>
